@@ -7,15 +7,17 @@ namespace _01_DeepestPit
         static void Main(string[] args)
         {
             var data = new int[][]{
-                new int[] { 0, 11, 3, -2, 0, 1, 0, -3, 2, 3 },
-                new int[] {},
-                new int[] {1},
-                new int[] {1, 10},
-                new int[] {10, 1},
-                new int[] {1, 0, 0, 0, 0, 0, 10, 20},
-                new int[] {-1, 0, 0, 0, 0, 0, -10, -20},
-                new int[] {0, 1, 3, -2, 0, 1, 0, -3, 2, 3},
-                new int[] { 7, 3, 3, 1, 7 }
+                //new int[] { 0, 11, 3, -2, 0, 1, 0, -3, 2, 3 },
+                //new int[] {},
+                //new int[] {1},
+                //new int[] {1, 10},
+                //new int[] {10, 1},
+                //new int[] {2, 0, 1 },
+                //new int[] {1, 0, 0, 0, 0, 0, 10, 20},
+                //new int[] {-1, 0, 0, 0, 0, 0, -10, -20},
+                //new int[] {0, 1, 3, -2, 0, 1, 0, -3, 2, 3},
+                //new int[] { 7, 3, 3, 1, 7 },
+                new int[] {4, 2, 0, 1, 1, 3}
             };
 
 
@@ -35,7 +37,8 @@ namespace _01_DeepestPit
             var drop = 0;
             var climb = 0;
             var prevInterval = Func.Unknown;
-            var max = 0;
+            var result = 0;
+            var weAreInPit = false;
 
             for (int i = 0; i < data.Length; i++)
             {
@@ -43,22 +46,27 @@ namespace _01_DeepestPit
 
                 if (nextInterval == Func.Down && prevInterval != Func.Down)
                     downStart = i;
-
-                if (nextInterval == Func.Up && prevInterval != Func.Up)
+                else if (nextInterval == Func.Up && prevInterval != Func.Up)
                     upStart = i;
 
                 if (nextInterval == Func.Up && prevInterval == Func.Down)
-                    drop = data[downStart] - data[i];
+                    weAreInPit = true;
 
-                if (nextInterval != Func.Up && prevInterval == Func.Up)
+                if (nextInterval == Func.Up && prevInterval == Func.Down)
+                    drop = data[downStart] - data[i];
+                else if (nextInterval != Func.Up && prevInterval == Func.Up)
                 {
                     climb = data[i] - data[upStart];
-                    max = Math.Max(max, Math.Min(drop, climb));
+                    if (weAreInPit)
+                    {
+                        result = Math.Max(result, Math.Min(drop, climb));
+                        weAreInPit = false; // pit was measured
+                    }
                 }
 
                 prevInterval = nextInterval;
             }
-            return max;
+            return result;
         }
 
         private enum Func : byte
