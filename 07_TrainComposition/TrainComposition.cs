@@ -10,45 +10,65 @@ namespace _07_TrainComposition
 
     public class TrainComposition
     {
-        private readonly LinkedList<int> _list;
-        private readonly List<int> _list2;
+        private Stack<int> _leftPart;
+        private Stack<int> _rightPart;
 
         public TrainComposition()
         {
-            _list = new LinkedList<int>();
-            _list2 = new List<int>();
+            _leftPart = new Stack<int>();
+            _rightPart = new Stack<int>();
         }
         public void AttachWagonFromLeft(int wagonId)
         {
-            _list.AddFirst(wagonId);
-            _list2.Insert(0, wagonId);
+            _leftPart.Push(wagonId);
         }
 
         public void AttachWagonFromRight(int wagonId)
         {
-            _list.AddLast(wagonId);
-            _list2.Add(wagonId);
+            _rightPart.Push(wagonId);
         }
 
         public int DetachWagonFromLeft()
         {
-
-            //var result = _list.First();
-            //_list.RemoveFirst();
-            //return result;
-            var result = _list2[0];
-            _list2.RemoveAt(0);
-            return result;
+            if (_leftPart.Count == 0)
+                DivideStack(true);
+            return _leftPart.Pop();
         }
 
         public int DetachWagonFromRight()
         {
-            //var result = _list.Last();
-            //_list.RemoveLast();
-            //return result;
-            var result = _list2.Last();
-            _list2.Remove(result);
-            return result;
+            if (_rightPart.Count == 0)
+                DivideStack(false);
+            return _rightPart.Pop();
+        }
+
+        private void DivideStack(bool right)
+        {
+            var temp = new List<int>();
+            if (right)
+            {
+                var count = _rightPart.Count / 2;
+                for (var i = 1; i <= count; i++)
+                    temp.Add(_rightPart.Pop());
+
+                while (_rightPart.Count > 0)
+                    _leftPart.Push(_rightPart.Pop());
+
+                temp.Reverse();
+                _rightPart = new Stack<int>(temp);
+            }
+            else
+            {
+                var count = _leftPart.Count / 2;
+                for (var i = 1; i <= count; i++)
+                    temp.Add(_leftPart.Pop());
+
+                while (_leftPart.Count > 0)
+                    _rightPart.Push(_leftPart.Pop());
+
+                temp.Reverse();
+                _leftPart = new Stack<int>(temp);
+            }
         }
     }
 }
