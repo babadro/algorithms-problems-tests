@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lessons", "Lessons", "{8854
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_BinaryGap", "BinaryGap\01_BinaryGap.csproj", "{8682D239-CC4F-448B-9700-41A98D31A966}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Arrays_01_CyclingRotation", "02_Arrays_01_CyclingRotation\02_Arrays_01_CyclingRotation.csproj", "{232FBCE6-D6C7-4F41-8F16-941523E983FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{8682D239-CC4F-448B-9700-41A98D31A966}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8682D239-CC4F-448B-9700-41A98D31A966}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8682D239-CC4F-448B-9700-41A98D31A966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232FBCE6-D6C7-4F41-8F16-941523E983FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232FBCE6-D6C7-4F41-8F16-941523E983FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232FBCE6-D6C7-4F41-8F16-941523E983FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232FBCE6-D6C7-4F41-8F16-941523E983FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{F7AC9FDB-5FEE-41A9-AD64-872CF22DBBE0} = {A19FDC74-4843-4D89-B9E4-7608621B4F35}
 		{8854F46A-FCC6-42DB-87AE-7564C02624E6} = {EA40BAF4-2FAC-4315-BC87-DF0DF3978BEA}
 		{8682D239-CC4F-448B-9700-41A98D31A966} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{232FBCE6-D6C7-4F41-8F16-941523E983FC} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
