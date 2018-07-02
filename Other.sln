@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_PrefixSums_00_Theory", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_PrefixSums_01_PassingCars", "05_PrefixSums_01_PassingCars\05_PrefixSums_01_PassingCars.csproj", "{EB9FCDCC-F56A-4873-BC97-F43DAD31B56E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Sorting_01_Distinct", "06_Sorting_01_Distinct\06_Sorting_01_Distinct.csproj", "{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{EB9FCDCC-F56A-4873-BC97-F43DAD31B56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB9FCDCC-F56A-4873-BC97-F43DAD31B56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB9FCDCC-F56A-4873-BC97-F43DAD31B56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +145,7 @@ Global
 		{D6A218C0-5DA0-4EDC-89DE-A1231272B915} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{5F0A4B14-33AF-44B3-9431-2C82C6C76840} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{EB9FCDCC-F56A-4873-BC97-F43DAD31B56E} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
