@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Sorting_01_Distinct", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_StackAndQueues_01_Nesting", "07_StackAndQueues_01_Nesting\07_StackAndQueues_01_Nesting.csproj", "{82239206-477C-403D-B5FD-FE1AA809BCE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Leader_01_Dominator", "08_Leader_01_Dominator\08_Leader_01_Dominator.csproj", "{C0C67AD0-806D-4790-82FF-E14430556E84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{82239206-477C-403D-B5FD-FE1AA809BCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82239206-477C-403D-B5FD-FE1AA809BCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82239206-477C-403D-B5FD-FE1AA809BCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C67AD0-806D-4790-82FF-E14430556E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C67AD0-806D-4790-82FF-E14430556E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C67AD0-806D-4790-82FF-E14430556E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C67AD0-806D-4790-82FF-E14430556E84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +159,7 @@ Global
 		{EB9FCDCC-F56A-4873-BC97-F43DAD31B56E} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{A46BA66D-1EF3-4C52-9CEE-2A096ACD9F98} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{82239206-477C-403D-B5FD-FE1AA809BCE4} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{C0C67AD0-806D-4790-82FF-E14430556E84} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
