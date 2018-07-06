@@ -57,6 +57,26 @@ namespace _09_MaximumSliceProblem_00_Theory
             return result;
         }
 
+        static int GoldenMaxSlice(int[] A)
+        {
+            var maxEnding = 0;
+            var maxSlice = 0;
+
+            foreach (var i in A)
+            {
+                maxEnding = Math.Max(0, maxEnding + i);
+                maxSlice = Math.Max(maxSlice, maxEnding);
+            }
+            return maxEnding;
+            /*
+             * max_ending = max_slice = 0
+                3 for a in A:
+                4 max_ending = max(0, max_ending + a)
+                5 max_slice = max(max_slice, max_ending)
+                6 return max_slice
+             */
+        }
+
         static int[] PrefixSum(int[] A)
         {
             var n = A.Length;
@@ -70,6 +90,7 @@ namespace _09_MaximumSliceProblem_00_Theory
             var input = new int[] {5, -7, 3, 5, -2, 4, -1};
             Console.WriteLine(SlowMaxSlice(input));
             Console.WriteLine(QuadraticMaxSlice(input, PrefixSum(input)));
+            Console.WriteLine(GoldenMaxSlice(input));
             Console.ReadLine();
         }
     }
