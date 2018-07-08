@@ -66,15 +66,10 @@ namespace _09_MaximumSliceProblem_00_Theory
             {
                 maxEnding = Math.Max(0, maxEnding + i);
                 maxSlice = Math.Max(maxSlice, maxEnding);
+                Console.WriteLine($"MaxEnding: {maxEnding}");
+                Console.WriteLine($"MaxSlice: {maxSlice}");
             }
-            return maxEnding;
-            /*
-             * max_ending = max_slice = 0
-                3 for a in A:
-                4 max_ending = max(0, max_ending + a)
-                5 max_slice = max(max_slice, max_ending)
-                6 return max_slice
-             */
+            return maxSlice;
         }
 
         static int[] PrefixSum(int[] A)
@@ -87,10 +82,11 @@ namespace _09_MaximumSliceProblem_00_Theory
         }
         static void Main(string[] args)
         {
-            var input = new int[] {5, -7, 3, 5, -2, 4, -1};
-            Console.WriteLine(SlowMaxSlice(input));
-            Console.WriteLine(QuadraticMaxSlice(input, PrefixSum(input)));
-            Console.WriteLine(GoldenMaxSlice(input));
+            var input1 = new int[] {5, -7, 3, 5, -2, 4, -1};
+            var input2 = new int[] { -5, -7, -3, -5, -2, -4, -1 };
+            Console.WriteLine(SlowMaxSlice(input1));
+            Console.WriteLine(QuadraticMaxSlice(input1, PrefixSum(input1)));
+            Console.WriteLine(GoldenMaxSlice(input1));
             Console.ReadLine();
         }
     }
