@@ -8,6 +8,7 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
 {
     class Solution
     {
+        #region bad
         public static int solution(int[] A)
         {
             if (A.Length <= 3)
@@ -46,6 +47,42 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
             for (var k = 1; k < n + 1; k++)
                 P[k] = P[k - 1] + A[k - 1];
             return P;
+        }
+
+        #endregion
+
+        public static int solution2(int[] A)
+        {
+            var maxEnding = 0;
+            var maxSlice = 0;
+
+            // maxSlice features
+            var start = 1;
+            var finish = 0;
+            var separator = 0;
+
+            var separatorExists = false;
+
+            for (var i = 1; i < A.Length - 1; i++)
+            {
+                //maxEnding = Math.Max(0, maxEnding + A[i]);
+                if (maxEnding + A[i] <= 0)
+                {
+                    if (!separatorExists)
+                    {
+                        separator = i;
+                        separatorExists = true;
+                    }
+                    else
+                    {
+                        maxEnding = 0;
+                        separatorExists = false;
+                    }
+                    
+                }
+                maxSlice = Math.Max(maxSlice, maxEnding);
+            }
+            return maxSlice;
         }
     }
     class Program
