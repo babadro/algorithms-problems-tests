@@ -62,6 +62,8 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
             var minValue = A[1];
             var separatorExists = false;
             var rightHalfSum = 0;
+            var endIdx = -1;
+            var minValueIdx = -1;
 
             for (var i = 1; i < A.Length - 1; i++)
             {
@@ -81,16 +83,26 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
                 }
                 else
                 {
-                    minValue = Math.Min(minValue, A[i]);
+                    if (A[i] < minValue)
+                    {
+                        minValue = A[i];
+                        minValueIdx = i;
+                    }
+                    //minValue = Math.Min(minValue, A[i]);
                     maxEnding += A[i];
                     if (separatorExists)
                         rightHalfSum += A[i];
                 }
                     
-
-                maxSlice = Math.Max(maxSlice, maxEnding);
+                if (maxEnding > maxSlice)
+                {
+                    maxSlice = maxEnding;
+                    endIdx = i;
+                    
+                }
+                //maxSlice = Math.Max(maxSlice, maxEnding);
             }
-            if (!separatorExists)
+            if (!separatorExists && (endIdx == A.Length - 2 || minValue < 0) && minValueIdx < endIdx)
             {
                 maxSlice = maxSlice - minValue;
             }
@@ -109,6 +121,7 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
             var input5 = new[] {3, 2, 6, -1, 4, 5, -1, 2};
             //Console.WriteLine(Solution.solution2(input2));
             Console.WriteLine(Solution.solution2(input4));
+            Console.WriteLine(Solution.solution2(input5));
             Console.ReadLine();
         }
     }
