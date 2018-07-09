@@ -53,15 +53,15 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
 
         public static int solution2(int[] A)
         {
+            if (A.Length <= 3)
+                return 0;
+
+
             var maxEnding = 0;
             var maxSlice = 0;
-
-            // maxSlice features
-            var start = 1;
-            var finish = 0;
-            var separator = 0;
-
+            var minValue = A[1];
             var separatorExists = false;
+            var rightHalfSum = 0;
 
             for (var i = 1; i < A.Length - 1; i++)
             {
@@ -70,18 +70,31 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
                 {
                     if (!separatorExists)
                     {
-                        separator = i;
                         separatorExists = true;
                     }
                     else
                     {
-                        maxEnding = 0;
-                        separatorExists = false;
+                        maxEnding = rightHalfSum;
+                        rightHalfSum = 0;
                     }
-                    
+
                 }
+                else
+                {
+                    minValue = Math.Min(minValue, A[i]);
+                    maxEnding += A[i];
+                    if (separatorExists)
+                        rightHalfSum += A[i];
+                }
+                    
+
                 maxSlice = Math.Max(maxSlice, maxEnding);
             }
+            if (!separatorExists)
+            {
+                maxSlice = maxSlice - minValue;
+            }
+                
             return maxSlice;
         }
     }
@@ -89,8 +102,13 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
     {
         static void Main(string[] args)
         {
-            var input = new int[] {1, 2, -30, -1, 5, 6, 7};
-            Console.WriteLine(Solution.solution(input));
+            var input = new[] {1, 2, -30, -1, 5, 6, 7};
+            var input2 = new[] {3, 1, 1, -2, 2, 1, -5, 2, 1, 1, -8, -5, 1, 2};
+            var input3 = new[] {1, 2, 3, 4, 5, 6 };
+            var input4 = new[] {0, 10, -5, -2, 0};
+            var input5 = new[] {3, 2, 6, -1, 4, 5, -1, 2};
+            //Console.WriteLine(Solution.solution2(input2));
+            Console.WriteLine(Solution.solution2(input4));
             Console.ReadLine();
         }
     }
