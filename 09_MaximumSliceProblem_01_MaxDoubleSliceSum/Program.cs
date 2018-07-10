@@ -51,7 +51,7 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
 
         #endregion
 
-        public static int solution2(int[] A)
+        public static int solution2(int[] A) // Task Score 61%, Corectness 100%, Performance 28 % https://app.codility.com/demo/results/training7XK2GH-2HG/
         {
             if (A.Length <= 3)
                 return 0;
@@ -109,6 +109,26 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
                 
             return maxSlice;
         }
+
+        public static int solution3(int[] A) //https://github.com/sdurandeu/codility-csharp/blob/master/MaxDoubleSliceSum.cs
+        {
+            if (A.Length <= 3)
+                return 0;
+
+            var endingMaxSum = new int[A.Length];
+            for (int i = 1; i < A.Length; i++)
+                endingMaxSum[i] = Math.Max(0, endingMaxSum[i - 1] + endingMaxSum[i]);
+
+            var startingMaxSum = new int[A.Length];
+            for (int i = A.Length - 2; i >= 0; i--)
+                startingMaxSum[i] = Math.Max(0, startingMaxSum[i + 1] + startingMaxSum[i]);
+
+            int maxDoubleSlice = 0;
+            for (int i = 0; i < A.Length - 2; i++)
+                maxDoubleSlice = Math.Max(maxDoubleSlice, endingMaxSum[i] + startingMaxSum[i + 2]);
+
+            return maxDoubleSlice;
+        }
     }
     class Program
     {
@@ -119,9 +139,11 @@ namespace _09_MaximumSliceProblem_01_MaxDoubleSliceSum
             var input3 = new[] {1, 2, 3, 4, 5, 6 };
             var input4 = new[] {0, 10, -5, -2, 0};
             var input5 = new[] {3, 2, 6, -1, 4, 5, -1, 2};
+            var input6 = new[] {-1, 0, 1, 1, 0, -1, 1, -1, 0, 1, 1, 0, -1, 1 };
             //Console.WriteLine(Solution.solution2(input2));
-            Console.WriteLine(Solution.solution2(input4));
-            Console.WriteLine(Solution.solution2(input5));
+            //Console.WriteLine(Solution.solution2(input4));
+            //Console.WriteLine(Solution.solution2(input5));
+            Console.WriteLine(Solution.solution2(input6));
             Console.ReadLine();
         }
     }
