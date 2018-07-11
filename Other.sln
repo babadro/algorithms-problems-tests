@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_MaximumSliceProblem_00_T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_PrimeAndCompositNumbers_01_CountFactors", "10_PrimeAndCompositNumbers_01_CountFactors\10_PrimeAndCompositNumbers_01_CountFactors.csproj", "{CFA46181-F818-48D9-8F5B-DD44026EAF7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_SieveOfEratosthenes_01_CountSemeprimes", "11_SieveOfEratosthenes_01_CountSemeprimes\11_SieveOfEratosthenes_01_CountSemeprimes.csproj", "{1043BF8A-D82B-4FB5-8403-E6A00853C6B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{CFA46181-F818-48D9-8F5B-DD44026EAF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFA46181-F818-48D9-8F5B-DD44026EAF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFA46181-F818-48D9-8F5B-DD44026EAF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1043BF8A-D82B-4FB5-8403-E6A00853C6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1043BF8A-D82B-4FB5-8403-E6A00853C6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1043BF8A-D82B-4FB5-8403-E6A00853C6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1043BF8A-D82B-4FB5-8403-E6A00853C6B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,6 +187,7 @@ Global
 		{719196EB-F5EF-4C48-AA20-FF0E8F635969} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{44723412-705A-4E69-81B9-9D13D491FBD0} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{CFA46181-F818-48D9-8F5B-DD44026EAF7B} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{1043BF8A-D82B-4FB5-8403-E6A00853C6B5} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
