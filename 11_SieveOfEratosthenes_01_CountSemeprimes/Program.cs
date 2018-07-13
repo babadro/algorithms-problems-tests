@@ -8,7 +8,7 @@ namespace _11_SieveOfEratosthenes_01_CountSemiprimes
 {
     class Program
     {
-        public static int[] solution(int N, int[] P, int[] Q)
+        public static int[] solution(int N, int[] P, int[] Q) // Good solution
         {
             var result = new int[P.Length];
             var primes = Primes(N);
