@@ -8,16 +8,28 @@ namespace _11_SieveOfEratosthenes_01_CountSemiprimes
 {
     class Program
     {
-        public int[] solution(int N, int[] P, int[] Q)
+        public static int[] solution(int N, int[] P, int[] Q)
         {
-            
-            return null;
+            var result = new int[P.Length];
+            var primes = Primes(N);
+            var semiPrimesSums = SemiPrimesSums(N, primes);
+            for (var i = 0; i < P.Length; i++)
+                result[i] = semiPrimesSums[Q[i]] - semiPrimesSums[P[i] - 1];
+
+            return result;
         }
 
-        static int[] SemiPrimesSum(int N)
+        static int[] SemiPrimesSums(int N, bool[] primes)
         {
-            var semiPrimesSum = new int[N + 1];
-            return null;
+            var semiPrimesSums = new int[N + 1];
+            for (var i = 1; i < semiPrimesSums.Length; i++)
+            {
+                if (SemiPrimeCheck(i, primes))
+                    semiPrimesSums[i] = semiPrimesSums[i - 1] + 1;
+                else
+                    semiPrimesSums[i] = semiPrimesSums[i - 1];
+            }
+            return semiPrimesSums;
         }
 
         static bool SemiPrimeCheck(int N, bool[] primes)
@@ -31,18 +43,11 @@ namespace _11_SieveOfEratosthenes_01_CountSemiprimes
                     break;
                 if (!primes[i])
                     continue;
-                
-                if (N)
+
+                if (N % i == 0 && primes[N / i])
+                    return true;
             }
-            while (i * i < n)
-            {
-                if (n % i == 0)
-                    result += 2;
-                i++;
-            }
-            if (i * i == n)
-                result += 1;
-            return result;
+            return false;
         }
 
         static bool[] Primes(int n)
@@ -69,7 +74,25 @@ namespace _11_SieveOfEratosthenes_01_CountSemiprimes
         }
         static void Main(string[] args)
         {
-            
+            //var primes = Primes(26);/*
+            //for (var i = 0; i <= 26; i++)
+            //    if (SemiPrimeCheck(i, primes))
+            //        Console.WriteLine(i);*/
+            //
+            //var semiPrimesSums = SemiPrimesSums(26, primes);
+            //for (var i = 0; i < semiPrimesSums.Length; i++)
+            //    Console.WriteLine(semiPrimesSums[i]);
+
+            var N = 26;
+            var P = new [] {1, 4, 16};
+            var Q = new[] {26, 10, 20};
+
+            var result = solution(N, P, Q);
+            foreach (var i in result)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();
         }
     }
 }
