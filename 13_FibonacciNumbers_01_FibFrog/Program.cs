@@ -10,6 +10,20 @@ namespace _13_FibonacciNumbers_01_FibFrog
     {
         public static int solution(int[] A)
         {
+            if (A.Length == 0)
+                return 1;
+            var fib = Fibonacci(31);
+            if (fib.Contains(A.Length + 1))
+                return 1;
+
+            for (var i = 2; i <= A.Length + 1; i++)
+            {
+                for (var j = 0; j < A.Length; j++)
+                {
+                    if (fib.Contains(j + 1) && fib.Contains(A.Length - j))
+                        return i;
+                }
+            }
 
             return 0;
         }
