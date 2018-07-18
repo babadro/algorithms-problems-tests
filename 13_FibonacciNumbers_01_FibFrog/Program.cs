@@ -8,7 +8,7 @@ namespace _13_FibonacciNumbers_01_FibFrog
 {
     class Program
     {
-        public static int solution(int[] A)
+        public static int solution(int[] A) //Bad solution. Naive. 33% score. Timeout errors + wrong answer errors
         {
             if (A.Length == 0)
                 return 1;
@@ -20,12 +20,26 @@ namespace _13_FibonacciNumbers_01_FibFrog
             {
                 for (var j = 0; j < A.Length; j++)
                 {
-                    if (fib.Contains(j + 1) && fib.Contains(A.Length - j))
+                    if (leapSequence(i, A, j, fib, -1))
                         return i;
                 }
             }
 
-            return 0;
+            return -1;
+        }
+
+        public static bool leapSequence(int leapCount, int[] arr, int firstLeaf, int[] fib, int start)
+        {
+            if (arr[firstLeaf] == 0)
+                return false;
+            if (leapCount > 2)
+                for (var i = firstLeaf + 1; i < arr.Length; i++)
+                    if (leapSequence(leapCount - 1, arr, i, fib, firstLeaf))
+                        return true;
+                
+            if (fib.Contains(firstLeaf - start) && fib.Contains(arr.Length - firstLeaf))
+                return true;
+            return false;
         }
 
         public static int[] Fibonacci(int n)
@@ -38,9 +52,17 @@ namespace _13_FibonacciNumbers_01_FibFrog
         }
         static void Main(string[] args)
         {
+            /*
             var fib = Fibonacci(31);
             foreach (var num in fib)
                 Console.WriteLine(num);
+                */
+            var input = new [] {0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0};
+            Console.WriteLine(solution(input));
+            var input2 = new[] {0, 0, 1, 1, 0, 1};
+            Console.WriteLine(solution(input2));
+            var input3 = new int[100000];
+            Console.WriteLine(solution(input3));
             Console.ReadLine();
         }
     }
