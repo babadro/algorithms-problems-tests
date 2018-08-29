@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_EuclideanAlghorithm_01_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_FibonacciNumbers_01_FibFrog", "13_FibonacciNumbers_01_FibFrog\13_FibonacciNumbers_01_FibFrog.csproj", "{47C92868-A41A-40FD-99E0-1857AECA0A8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_BinarySearchAlgorithm_00_Theory", "14_BinarySearchAlgorithm_00_Theory\14_BinarySearchAlgorithm_00_Theory.csproj", "{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{47C92868-A41A-40FD-99E0-1857AECA0A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C92868-A41A-40FD-99E0-1857AECA0A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C92868-A41A-40FD-99E0-1857AECA0A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -209,6 +215,7 @@ Global
 		{703F4ABA-8D5C-44D4-B008-19DD936A225C} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{464C3B17-0473-47CD-A8F5-74A92706BF04} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{47C92868-A41A-40FD-99E0-1857AECA0A8D} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
