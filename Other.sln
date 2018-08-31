@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_FibonacciNumbers_01_FibF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_BinarySearchAlgorithm_00_Theory", "14_BinarySearchAlgorithm_00_Theory\14_BinarySearchAlgorithm_00_Theory.csproj", "{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongToInt", "LongToInt\LongToInt.csproj", "{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
