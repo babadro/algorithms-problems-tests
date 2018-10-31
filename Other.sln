@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_BinarySearchAlgorithm_00
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongToInt", "LongToInt\LongToInt.csproj", "{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_BinarySearchAlgorithm_01_MinMaxDivision", "14_BinarySearchAlgorithm_01_MinMaxDivision\14_BinarySearchAlgorithm_01_MinMaxDivision.csproj", "{4F4E1C9B-C727-4E1F-8618-E204FE1E246A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E3A7B57-3EF6-429D-AA9D-9AF7551230E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F4E1C9B-C727-4E1F-8618-E204FE1E246A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F4E1C9B-C727-4E1F-8618-E204FE1E246A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F4E1C9B-C727-4E1F-8618-E204FE1E246A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F4E1C9B-C727-4E1F-8618-E204FE1E246A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +228,7 @@ Global
 		{464C3B17-0473-47CD-A8F5-74A92706BF04} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{47C92868-A41A-40FD-99E0-1857AECA0A8D} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{4F4E1C9B-C727-4E1F-8618-E204FE1E246A} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
