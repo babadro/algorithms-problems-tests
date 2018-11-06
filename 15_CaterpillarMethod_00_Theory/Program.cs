@@ -27,9 +27,11 @@ namespace _15_CaterpillarMethod_00_Theory
             return false;
         }
 
+        
         static int Triangles(int[] a)
         {
             var n = a.Length;
+            Array.Sort(a); // a must be a sorted in non-decreasing order array. 1 <= a0 <= a1 <= ... <= an-1 <= 10^9
             var result = 0;
             for (var x = 0; x < n; x++)
             {
@@ -45,7 +47,7 @@ namespace _15_CaterpillarMethod_00_Theory
         }
         static void Main(string[] args)
         {
-            var input = new int[] {2, 2, 1, 1, 1, 1};
+            var input = new int[] {2, 2, 1, 1, 1};
             Console.WriteLine(Triangles(input));
             Console.ReadLine();
         }
