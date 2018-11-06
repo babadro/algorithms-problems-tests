@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_BinarySearchAlgorithm_01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_CaterpillarMethod_00_Theory", "15_CaterpillarMethod_00_Theory\15_CaterpillarMethod_00_Theory.csproj", "{7D757C6D-93B4-4D23-9998-9764A46EC953}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_CaterpillarMethod_01_AbsDistinct", "15_CaterpillarMethod_01_AbsDistinct\15_CaterpillarMethod_01_AbsDistinct.csproj", "{AD7822E6-B8B0-42D4-AA20-B17544A78C8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{7D757C6D-93B4-4D23-9998-9764A46EC953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D757C6D-93B4-4D23-9998-9764A46EC953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D757C6D-93B4-4D23-9998-9764A46EC953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD7822E6-B8B0-42D4-AA20-B17544A78C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7822E6-B8B0-42D4-AA20-B17544A78C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7822E6-B8B0-42D4-AA20-B17544A78C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7822E6-B8B0-42D4-AA20-B17544A78C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -236,6 +242,7 @@ Global
 		{D8F4F9E9-637B-43ED-9A68-9F7E6EB0B170} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{4F4E1C9B-C727-4E1F-8618-E204FE1E246A} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{7D757C6D-93B4-4D23-9998-9764A46EC953} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{AD7822E6-B8B0-42D4-AA20-B17544A78C8E} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
