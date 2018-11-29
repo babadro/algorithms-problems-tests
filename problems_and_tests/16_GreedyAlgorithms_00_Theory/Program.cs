@@ -64,8 +64,12 @@ namespace _16_GreedyAlgorithms_00_Theory
             var i = w.Length - 1;
             while (i >= j)
             {
-                if (w[i])
+                if (w[i] + w[j] <= k)
+                    j += 1;
+                canoes += 1;
+                i -= 1;
             }
+            return canoes;
         }
 
         static void Main(string[] args)
@@ -73,6 +77,7 @@ namespace _16_GreedyAlgorithms_00_Theory
             int[] M = {1, 2, 5};
             int k = 10;
             var result = GreedyCoinChanging(M, k);
+
             Console.ReadLine();
         }
     }
