@@ -12,6 +12,22 @@ namespace _16_GreedyAltorithms_01_MaxNonoverlappingSegments
             var naiveResult = Solution.Solution1(A, B);
 
             Console.WriteLine(naiveResult);
+
+            int[] A1 = {0, 1, 2, 3, 4, 5};
+            int[] B1 = {2, 3, 4, 5, 6, 7};
+            var naiveResult1 = Solution.Solution1(A1, B1);
+            Console.WriteLine(naiveResult1);
+
+            int[] A2 = {0, 3, 6, 9, 12, 15, 18};
+            int[] B2 = {4, 7, 10, 13, 16, 19, 22};
+            var naiveResult2 = Solution.Solution1(A2, B2);
+            Console.WriteLine(naiveResult2);
+
+            var result2 = Solution.Solution2(A2, B2);
+            Console.WriteLine(result2);
+
+            Console.WriteLine(Solution.Solution2(A, B));
+
             Console.ReadLine();
         }
     }
@@ -37,10 +53,26 @@ namespace _16_GreedyAltorithms_01_MaxNonoverlappingSegments
             return result;
         }
 
-        //ToDo
-        static public int solution(int[] A, int[] B)
+        // Good solution. 100 % score.
+        static public int Solution2(int[] A, int[] B)
         {
-            return 0;
+            var totalCount = A.Length;
+            if (totalCount == 0)
+                return 0;
+            if (totalCount == 1)
+                return 1;
+
+            var result = 1;
+            var j = 0;
+            for (var i = 1; i < totalCount; i++)
+            {
+                if (A[i] <= B[j])
+                    continue;
+
+                result += 1;
+                j = i;
+            }
+            return result;
         }
     }
 }
