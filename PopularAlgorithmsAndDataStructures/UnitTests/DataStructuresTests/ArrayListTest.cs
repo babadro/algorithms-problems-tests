@@ -2,7 +2,7 @@ using System;
 using DataStructures.Lists;
 using Xunit;
 
-namespace UnitTests
+namespace UnitTests.DataStructuresTests
 {
     public class ArrayListTest
     {
