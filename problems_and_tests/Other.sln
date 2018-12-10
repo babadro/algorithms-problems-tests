@@ -75,7 +75,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_CaterpillarMethod_01_Abs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_GreedyAlgorithms_00_Theory", "16_GreedyAlgorithms_00_Theory\16_GreedyAlgorithms_00_Theory.csproj", "{B676C45F-C527-44DF-9D15-888EDE55A3E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_GreedyAltorithms_01_MaxNonoverlappingSegments", "16_GreedyAltorithms_01_MaxNonoverlappingSegments\16_GreedyAltorithms_01_MaxNonoverlappingSegments.csproj", "{8487C1E2-9085-4EF0-97F2-AE41EB607121}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16_GreedyAltorithms_01_MaxNonoverlappingSegments", "16_GreedyAltorithms_01_MaxNonoverlappingSegments\16_GreedyAltorithms_01_MaxNonoverlappingSegments.csproj", "{8487C1E2-9085-4EF0-97F2-AE41EB607121}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuestionsAndAnswers", "QuestionsAndAnswers", "{BF2E645A-41B6-4455-95A1-8E197208EBEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_013_ExceptionHandling", "_013_ExceptionHandling\_013_ExceptionHandling.csproj", "{C92BABEC-2AC1-4569-A6E0-A3A8B0D34CBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +223,10 @@ Global
 		{8487C1E2-9085-4EF0-97F2-AE41EB607121}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8487C1E2-9085-4EF0-97F2-AE41EB607121}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8487C1E2-9085-4EF0-97F2-AE41EB607121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92BABEC-2AC1-4569-A6E0-A3A8B0D34CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92BABEC-2AC1-4569-A6E0-A3A8B0D34CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92BABEC-2AC1-4569-A6E0-A3A8B0D34CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92BABEC-2AC1-4569-A6E0-A3A8B0D34CBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,6 +265,7 @@ Global
 		{AD7822E6-B8B0-42D4-AA20-B17544A78C8E} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{B676C45F-C527-44DF-9D15-888EDE55A3E5} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
 		{8487C1E2-9085-4EF0-97F2-AE41EB607121} = {8854F46A-FCC6-42DB-87AE-7564C02624E6}
+		{C92BABEC-2AC1-4569-A6E0-A3A8B0D34CBE} = {BF2E645A-41B6-4455-95A1-8E197208EBEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
