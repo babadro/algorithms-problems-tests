@@ -16,7 +16,7 @@ namespace UnitTests.AlgorithmsTests
         {
             int[] arr = {12, 11, 13, 5, 6, 7};
             int[] expectedResult = {5, 6, 7, 11, 12, 13};
-            MergeSort.Start(arr, 0, arr.Length);
+            MergeSort.Start(arr, 0, arr.Length - 1);
 
             Assert.True(arr.SequenceEqual(expectedResult));
         }
