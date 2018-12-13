@@ -10,13 +10,13 @@ namespace UnitTests.DataStructuresTests
         {
             var p = new Stack(5);
 
-            p.push(10);
-            p.push(20);
-            p.push(30);
-            Assert.Equal(30, p.pop());
-            Assert.Equal(20, p.pop());
-            Assert.Equal(10, p.pop());
-            Assert.Equal(-1, p.pop());
+            p.Push(10);
+            p.Push(20);
+            p.Push(30);
+            Assert.Equal(30, p.Pop());
+            Assert.Equal(20, p.Pop());
+            Assert.Equal(10, p.Pop());
+            Assert.Equal(-1, p.Pop());
         }
     }
 }

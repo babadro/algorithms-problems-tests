@@ -4,55 +4,48 @@ using System.Text;
 
 namespace DataStructures.Lists
 {
+    
     public class Stack
     {
-        private int[] ele;
+        private int[] array;
         private int top;
-        private int max;
 
         public Stack(int size)
         {
-            ele = new int[size]; // Maximum size of Stack
+            array = new int[size];
             top = -1;
-            max = size;
         }
 
-        public void push(int item)
+        public void Push(int element)
         {
-            if (top == max - 1)
+            if (top == array.Length - 1)
             {
-                Console.WriteLine("Stack Overflow");
+                Console.WriteLine("Stack overflow");
                 return;
             }
             else
-                ele[++top] = item;
+                array[++top] = element;
         }
 
-        public int pop()
+        public int Pop()
         {
             if (top == -1)
             {
-                Console.WriteLine("Stack is Empty");
+                Console.WriteLine("Stack is empty");
                 return -1;
             }
             else
-            {
-                Console.WriteLine($"{ele[top]} popped from stack ");
-                return ele[top--];
-            }
+                return array[top--];
         }
 
-        public void PrintStack()
+        public void Print()
         {
             if (top == -1)
-            {
-                Console.WriteLine("Stack is Empty");
-                return;
-            }
+                Console.WriteLine("Stack is empty");
             else
             {
-                for (int i = 0; i <= top; i++)
-                    Console.WriteLine($"{ele[i]} pushed into stack");
+                foreach (var i in array)
+                    Console.WriteLine(i);
             }
         }
     }

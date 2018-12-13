@@ -1,4 +1,5 @@
 ﻿using Algorithms;
+using DataStructures.Lists;
 using System;
 
 namespace ForDebug
@@ -7,10 +8,11 @@ namespace ForDebug
     {
         static void Main(string[] args)
         {
-            var input = new int[] { 1, 4, 3, 2, 5};
-            MergeSort.Start(input, 1, 3);
-            foreach (var i in input)
-                Console.WriteLine(i);
+            var p = new Stack(5);
+
+            p.Push(10);
+            p.Push(20);
+            p.Push(30);
 
             Console.ReadLine();
         }
