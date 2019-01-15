@@ -101,7 +101,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_BinarySearchTree", "03_B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Skeet", "01_Skeet", "{492CB3ED-938E-41B9-A043-3108B150490F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyConstructor", "EmptyConstructor\EmptyConstructor.csproj", "{C7776B60-89FC-48BD-BD93-B943528A873B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmptyConstructor", "EmptyConstructor\EmptyConstructor.csproj", "{C7776B60-89FC-48BD-BD93-B943528A873B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_GraphUsingAdjacencyMatrix", "04_GraphUsingAdjacencyMatrix\04_GraphUsingAdjacencyMatrix.csproj", "{5EFA1F1F-F93F-4CBE-A97B-B3B908AB1B3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -273,6 +275,10 @@ Global
 		{C7776B60-89FC-48BD-BD93-B943528A873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7776B60-89FC-48BD-BD93-B943528A873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7776B60-89FC-48BD-BD93-B943528A873B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFA1F1F-F93F-4CBE-A97B-B3B908AB1B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFA1F1F-F93F-4CBE-A97B-B3B908AB1B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFA1F1F-F93F-4CBE-A97B-B3B908AB1B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFA1F1F-F93F-4CBE-A97B-B3B908AB1B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -321,6 +327,7 @@ Global
 		{E43C521C-4985-4ECD-942D-479D10E85D51} = {00E6A2DE-A133-4912-973C-227C25C9B47A}
 		{81AD7C93-C6B8-4989-9768-DAAAA10571EE} = {DE9CA56D-FEB4-420D-AB25-7F3E3F453AFD}
 		{C7776B60-89FC-48BD-BD93-B943528A873B} = {492CB3ED-938E-41B9-A043-3108B150490F}
+		{5EFA1F1F-F93F-4CBE-A97B-B3B908AB1B3C} = {DE9CA56D-FEB4-420D-AB25-7F3E3F453AFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
