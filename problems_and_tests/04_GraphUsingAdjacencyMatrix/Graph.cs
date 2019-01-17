@@ -5,64 +5,47 @@ using System.Text;
 namespace _04_GraphUsingAdjacencyMatrix
 {
     /// <summary>
-    /// It doesn't work.
+    /// https://www.programiz.com/dsa/graph-adjacency-matrix
     /// </summary>
     public class Graph
     {
-        private int[][] AdjMatrix;
-        public int NumVertex;
-        public Dictionary<char, int> Vertices;
-        private char[]  verticesList;
-        public Graph(int numVertex)
+        private bool[][] adjMatrix;
+        private int numVertices;
+
+        public Graph(int numVertices)
         {
-            AdjMatrix = new int[6][];
-            for (var i = 0; i < numVertex; i++)
+            this.numVertices = numVertices;
+            adjMatrix = new bool[numVertices][];
+            for (var i = 0; i < adjMatrix.Length; i++)
+                adjMatrix[i] = new bool[numVertices];
+        }
+
+        public void AddEdge(int i, int j)
+        {
+            adjMatrix[i][j] = true;
+            adjMatrix[j][i] = true;
+        }
+
+        public void RemoveEdge(int i, int j)
+        {
+            adjMatrix[i][j] = false;
+            adjMatrix[j][i] = false;
+        }
+
+        public bool isEdge(int i, int j) => adjMatrix[i][j];
+
+        public override string ToString()
+        {
+            StringBuilder s = new StringBuilder();
+            for (int i = 0; i < numVertices; i++)
             {
-                var arr = new int[numVertex];
-                for (var j = 0; j < numVertex; j++)
-                    arr[j] = -1;
-                AdjMatrix[i] = arr;
+                s.Append(i + ": ");
+                foreach (var j in adjMatrix[i])
+                    s.Append((j ? 1 : 0) + " ");
+
+                s.Append("\n");
             }
-
-            NumVertex = numVertex;
-            Vertices = new Dictionary<char, int>();
-            verticesList = new char[numVertex];
+            return s.ToString();
         }
-
-        public void SetVertex(int vertex, char id)
-        {
-            if (vertex >= 0 && vertex <= NumVertex)
-            {
-                Vertices[id] = vertex;
-                verticesList[vertex] = id;
-            }
-        }
-
-        public void SetEdge(char from, char to, int cost = 0)
-        {
-            int frm = Vertices[from];
-            int t = Vertices[to];
-            AdjMatrix[frm][t] = cost;
-            // For directed graph do not add this
-            AdjMatrix[to][from] = cost;
-        }
-
-        public char[] GetVertex()
-        {
-            return verticesList;
-        }
-
-        public List<(char, char, int)> GetEdges()
-        {
-            var edges = new List<(char, char, int)>();
-            for (var i = 0; i < NumVertex; i++)
-                for (var j = 0; j < NumVertex; j++)
-                    if (AdjMatrix[i][j] != -1)
-                        edges.Add((verticesList[i], verticesList[j], AdjMatrix[i][j]));
-
-            return edges;
-        }
-
-        public int[][] GetMatrix() => AdjMatrix;
     }
 }
