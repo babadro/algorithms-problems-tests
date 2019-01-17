@@ -4,14 +4,18 @@ using System.Text;
 
 namespace _04_GraphUsingAdjacencyMatrix
 {
-    class Graph
+    /// <summary>
+    /// It doesn't work.
+    /// </summary>
+    public class Graph
     {
-        public int[][] AdjMatrix;
+        private int[][] AdjMatrix;
         public int NumVertex;
         public Dictionary<char, int> Vertices;
         private char[]  verticesList;
         public Graph(int numVertex)
         {
+            AdjMatrix = new int[6][];
             for (var i = 0; i < numVertex; i++)
             {
                 var arr = new int[numVertex];
@@ -48,14 +52,17 @@ namespace _04_GraphUsingAdjacencyMatrix
             return verticesList;
         }
 
-        //public (char, char, int) GetEdges()
-        //{
-        //    var edges = new (char, char, int)[NumVertex,NumVertex];
-        //    for (var i = 0; i < NumVertex; i++)
-        //        for (var j = 0; j < NumVertex; j++)
-        //            if (AdjMatrix[i][j] != -1)
-        //                edges[i, j] = ;
-        //} 
+        public List<(char, char, int)> GetEdges()
+        {
+            var edges = new List<(char, char, int)>();
+            for (var i = 0; i < NumVertex; i++)
+                for (var j = 0; j < NumVertex; j++)
+                    if (AdjMatrix[i][j] != -1)
+                        edges.Add((verticesList[i], verticesList[j], AdjMatrix[i][j]));
 
+            return edges;
+        }
+
+        public int[][] GetMatrix() => AdjMatrix;
     }
 }
