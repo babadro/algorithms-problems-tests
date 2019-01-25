@@ -9,7 +9,8 @@ namespace _01_IndexMapping_or_TrivialHashing
             int[] a = { -1, 9, -5, -8, -5, -2 };
 
             var hashTable = new GFG(10);
-            int X = -5;
+            hashTable.Insert(a);
+            int X = 8;
 
             if (hashTable.Search(X))
                 Console.WriteLine("Present");
