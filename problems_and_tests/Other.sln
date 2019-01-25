@@ -111,15 +111,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_IndexMapping_or_TrivialH
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_LearnFromAnyErrors", "06_LearnFromAnyErrors", "{42A82B12-DEE1-4778-B076-ED0ADE71555C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_BackgroundThread", "01_WstU\01_BackgroundThread.csproj", "{AAE8D8F7-0128-4210-A723-222227FC1FD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_BackgroundThread", "01_WstU\01_BackgroundThread.csproj", "{AAE8D8F7-0128-4210-A723-222227FC1FD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Casting", "ObjAsInt\02_Casting.csproj", "{E0DD3042-852E-41BE-ACD5-3AA5B7F3074F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Casting", "ObjAsInt\02_Casting.csproj", "{E0DD3042-852E-41BE-ACD5-3AA5B7F3074F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_OneMethodDifferentReturnTypes", "03_OneMethodDifferentReturnTypes\03_OneMethodDifferentReturnTypes.csproj", "{EF1B6DF5-6AB4-4887-A8A1-208CF030B0A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_OneMethodDifferentReturnTypes", "03_OneMethodDifferentReturnTypes\03_OneMethodDifferentReturnTypes.csproj", "{EF1B6DF5-6AB4-4887-A8A1-208CF030B0A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_VirtualAndNew", "04_VirtualAndNew\04_VirtualAndNew.csproj", "{A4887B7C-75D4-4AF6-A93C-FFD3BA2765BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_VirtualAndNew", "04_VirtualAndNew\04_VirtualAndNew.csproj", "{A4887B7C-75D4-4AF6-A93C-FFD3BA2765BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_PassTypeAsParameter", "05_PassTypeAsParameter\05_PassTypeAsParameter.csproj", "{13ED8D2E-2580-4187-ADD3-182BFD829D7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_PassTypeAsParameter", "05_PassTypeAsParameter\05_PassTypeAsParameter.csproj", "{13ED8D2E-2580-4187-ADD3-182BFD829D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_BoxingAndUnboxing", "18_BoxingAndUnboxing\18_BoxingAndUnboxing.csproj", "{05E28A92-00A8-4CD9-A1DD-41D45DC22426}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -319,6 +321,10 @@ Global
 		{13ED8D2E-2580-4187-ADD3-182BFD829D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13ED8D2E-2580-4187-ADD3-182BFD829D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13ED8D2E-2580-4187-ADD3-182BFD829D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E28A92-00A8-4CD9-A1DD-41D45DC22426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E28A92-00A8-4CD9-A1DD-41D45DC22426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E28A92-00A8-4CD9-A1DD-41D45DC22426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E28A92-00A8-4CD9-A1DD-41D45DC22426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -375,6 +381,7 @@ Global
 		{EF1B6DF5-6AB4-4887-A8A1-208CF030B0A1} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 		{A4887B7C-75D4-4AF6-A93C-FFD3BA2765BB} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 		{13ED8D2E-2580-4187-ADD3-182BFD829D7F} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
+		{05E28A92-00A8-4CD9-A1DD-41D45DC22426} = {BF2E645A-41B6-4455-95A1-8E197208EBEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
