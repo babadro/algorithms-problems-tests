@@ -123,7 +123,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_PassTypeAsParameter", "0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18_BoxingAndUnboxing", "18_BoxingAndUnboxing\18_BoxingAndUnboxing.csproj", "{05E28A92-00A8-4CD9-A1DD-41D45DC22426}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07_MultiThreading_Q", "07_MultiThreading_Q", "{5853380F-9AFF-4947-B9C9-03382133A39D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_MultiThreading_Q", "08_MultiThreading_Q", "{5853380F-9AFF-4947-B9C9-03382133A39D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitHandle", "WaitHandle\WaitHandle.csproj", "{F269A9E9-CB74-4D17-B39F-758A6DD62556}"
 EndProject
@@ -141,9 +141,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_StaticConstructor", "07_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Finalize", "08_Finalize\08_Finalize.csproj", "{4916316C-C45D-4B15-9A7D-7E26361985A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Dispose", "09_Dispose\09_Dispose.csproj", "{DA3FCFC6-D51B-499F-869C-2617E70D81FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_Dispose", "09_Dispose\09_Dispose.csproj", "{DA3FCFC6-D51B-499F-869C-2617E70D81FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_StringImmutable", "10_StringImmutable\10_StringImmutable.csproj", "{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_StringImmutable", "10_StringImmutable\10_StringImmutable.csproj", "{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_ltcd", "09_ltcd", "{75CD9C4B-6A8E-484C-AC7B-9A42C4F6E952}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_SubtreeOfAnotherTree", "01_SubtreeOAnotherTree\01_SubtreeOfAnotherTree.csproj", "{6DCAA240-C84C-4D28-B8ED-A14251355B82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -383,6 +387,10 @@ Global
 		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DCAA240-C84C-4D28-B8ED-A14251355B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCAA240-C84C-4D28-B8ED-A14251355B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCAA240-C84C-4D28-B8ED-A14251355B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCAA240-C84C-4D28-B8ED-A14251355B82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -449,6 +457,7 @@ Global
 		{4916316C-C45D-4B15-9A7D-7E26361985A3} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 		{DA3FCFC6-D51B-499F-869C-2617E70D81FB} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
+		{6DCAA240-C84C-4D28-B8ED-A14251355B82} = {75CD9C4B-6A8E-484C-AC7B-9A42C4F6E952}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
