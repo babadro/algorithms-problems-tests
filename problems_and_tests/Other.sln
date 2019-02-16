@@ -143,6 +143,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Finalize", "08_Finalize\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Dispose", "09_Dispose\09_Dispose.csproj", "{DA3FCFC6-D51B-499F-869C-2617E70D81FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_StringImmutable", "10_StringImmutable\10_StringImmutable.csproj", "{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -377,6 +379,10 @@ Global
 		{DA3FCFC6-D51B-499F-869C-2617E70D81FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA3FCFC6-D51B-499F-869C-2617E70D81FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA3FCFC6-D51B-499F-869C-2617E70D81FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -442,6 +448,7 @@ Global
 		{4CF5D4D3-AE3C-4431-8B12-A48F3E6C383D} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 		{4916316C-C45D-4B15-9A7D-7E26361985A3} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 		{DA3FCFC6-D51B-499F-869C-2617E70D81FB} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
+		{982FDCC3-2F56-467B-A60E-F6B33FD17D0B} = {42A82B12-DEE1-4778-B076-ED0ADE71555C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
