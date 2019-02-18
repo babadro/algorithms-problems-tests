@@ -151,9 +151,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_SubtreeOfAnotherTree", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10_RandomCSharpQuestions", "10_RandomCSharpQuestions", "{873689EF-26D9-4F99-BC99-A8A0B6433E97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_StructureAndInterface", "01_StructureAndInterface\01_StructureAndInterface.csproj", "{FFB32A50-15C7-4E8B-AB8F-883D9165E696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_StructureAndInterface", "01_StructureAndInterface\01_StructureAndInterface.csproj", "{FFB32A50-15C7-4E8B-AB8F-883D9165E696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_GenericConstraints", "02_GenericConstraints\02_GenericConstraints.csproj", "{18AD4501-54A1-4994-994F-413FA642B074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_GenericConstraints", "02_GenericConstraints\02_GenericConstraints.csproj", "{18AD4501-54A1-4994-994F-413FA642B074}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11_Threading", "11_Threading", "{365658A0-3EF7-4AFD-8ECF-64895C7DCDB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
