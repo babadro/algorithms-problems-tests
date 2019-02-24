@@ -13,7 +13,7 @@ namespace MyMethodAsyncDemo
         //    Int32 local = argument;
         //    try
         //    {
-        //        Type1 result1 await Method1Async();
+        //        Type1 result1 = await Method1Async();
         //        for (Int32 x = 0; x < 3; x++)
         //        {
         //            Type2 result2 = await Method2Async();
