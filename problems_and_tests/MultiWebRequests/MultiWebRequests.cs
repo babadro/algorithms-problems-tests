@@ -31,9 +31,16 @@ namespace MultiWebRequestsSample
             m_ac.AllBegun(AllDone, timeout);
         }
 
-        private void ComputeResult(String server, Task<Byte[]> tasks)
+        private void ComputeResult(String server, Task<Byte[]> task)
         {
+            Object result;
+            if (task.Exception != null)
+                result = task.Exception.InnerException;
+            else
+                result = task.Result.Length;
 
+            m_servers[server] = result;
+            m_ac.JustEnded();
         }
 
         public void Cancel() { m_ac.Cancel(); }
