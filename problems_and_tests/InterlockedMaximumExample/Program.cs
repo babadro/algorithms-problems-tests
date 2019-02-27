@@ -25,7 +25,7 @@ namespace InterlockedMaximumExample
         static void Main(string[] args)
         {
             var first = 1;
-            var result = Maximum(ref firstVal)
+            //var result = Maximum(ref firstVal)
         }
     }
 }
