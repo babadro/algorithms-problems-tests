@@ -193,11 +193,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleWaitLockExample", "Si
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleWaitLockBySemaphore", "SimpleWaitLockBySemaphore\SimpleWaitLockBySemaphore.csproj", "{C7176B93-7BE2-41AA-9A4C-149E4DEFB0FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveLock", "RecursiveLock\RecursiveLock.csproj", "{203A4A25-4792-45F8-AB71-01C67FA1C5D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveLock", "RecursiveLock\RecursiveLock.csproj", "{203A4A25-4792-45F8-AB71-01C67FA1C5D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30_HybridThreadSyncrhonizationConstructs", "30_HybridThreadSyncrhonizationConstructs", "{EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHybridLock", "SimpleHybridLock\SimpleHybridLock.csproj", "{88DAE68A-CC51-4C05-8621-36F33A50D58E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleHybridLock", "SimpleHybridLock\SimpleHybridLock.csproj", "{88DAE68A-CC51-4C05-8621-36F33A50D58E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionExample", "TransactionExample\TransactionExample.csproj", "{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -517,6 +519,10 @@ Global
 		{88DAE68A-CC51-4C05-8621-36F33A50D58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88DAE68A-CC51-4C05-8621-36F33A50D58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88DAE68A-CC51-4C05-8621-36F33A50D58E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -607,6 +613,7 @@ Global
 		{203A4A25-4792-45F8-AB71-01C67FA1C5D9} = {207FEE88-1F16-4832-B11C-542A94652356}
 		{EC048D33-BAFC-4339-9A4C-37FE10A0E2B5} = {2EA49CF2-5A1D-49BB-8286-BBCB1F6785BD}
 		{88DAE68A-CC51-4C05-8621-36F33A50D58E} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
+		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
