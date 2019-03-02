@@ -203,6 +203,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionExample", "Trans
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriterLockSlimExample", "ReadWriterLockSlimExample\ReadWriterLockSlimExample.csproj", "{83B9173E-E6BA-4938-8045-7611E8980430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCheckLockingTechnique", "DoubleCheckLockingTechnique\DoubleCheckLockingTechnique.csproj", "{36FD21DB-2332-4B7B-A3CB-2040C14920FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -529,6 +531,10 @@ Global
 		{83B9173E-E6BA-4938-8045-7611E8980430}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83B9173E-E6BA-4938-8045-7611E8980430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B9173E-E6BA-4938-8045-7611E8980430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FD21DB-2332-4B7B-A3CB-2040C14920FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FD21DB-2332-4B7B-A3CB-2040C14920FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FD21DB-2332-4B7B-A3CB-2040C14920FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FD21DB-2332-4B7B-A3CB-2040C14920FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -621,6 +627,7 @@ Global
 		{88DAE68A-CC51-4C05-8621-36F33A50D58E} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
 		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
 		{83B9173E-E6BA-4938-8045-7611E8980430} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
+		{36FD21DB-2332-4B7B-A3CB-2040C14920FF} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
