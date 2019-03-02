@@ -199,7 +199,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30_HybridThreadSyncrhonizat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleHybridLock", "SimpleHybridLock\SimpleHybridLock.csproj", "{88DAE68A-CC51-4C05-8621-36F33A50D58E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionExample", "TransactionExample\TransactionExample.csproj", "{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionExample", "TransactionExample\TransactionExample.csproj", "{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriterLockSlimExample", "ReadWriterLockSlimExample\ReadWriterLockSlimExample.csproj", "{83B9173E-E6BA-4938-8045-7611E8980430}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -523,6 +525,10 @@ Global
 		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B9173E-E6BA-4938-8045-7611E8980430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B9173E-E6BA-4938-8045-7611E8980430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B9173E-E6BA-4938-8045-7611E8980430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B9173E-E6BA-4938-8045-7611E8980430}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -614,6 +620,7 @@ Global
 		{EC048D33-BAFC-4339-9A4C-37FE10A0E2B5} = {2EA49CF2-5A1D-49BB-8286-BBCB1F6785BD}
 		{88DAE68A-CC51-4C05-8621-36F33A50D58E} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
 		{459E321D-0F09-4DF4-BDB1-B3D2B76DA99C} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
+		{83B9173E-E6BA-4938-8045-7611E8980430} = {EC048D33-BAFC-4339-9A4C-37FE10A0E2B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
