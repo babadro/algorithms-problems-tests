@@ -229,9 +229,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_ThreeBoxing", "04_ThreeB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_InterfaceBoxing", "05_InterfaceBoxing\05_InterfaceBoxing.csproj", "{B59DA212-3EC5-481C-B098-C9A81304F4E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_ChangingFieldsInBoxed", "06_ChangingFieldsInBoxed\06_ChangingFieldsInBoxed.csproj", "{BA5B878D-A747-49F8-8BDC-022D598E282C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_ChangingFieldsInBoxed", "06_ChangingFieldsInBoxed\06_ChangingFieldsInBoxed.csproj", "{BA5B878D-A747-49F8-8BDC-022D598E282C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_IChangeBoxedPoint", "07_IChangeBoxedPoint\07_IChangeBoxedPoint.csproj", "{64A0E30A-EF44-4959-927F-EDD23CE7F5CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_IChangeBoxedPoint", "07_IChangeBoxedPoint\07_IChangeBoxedPoint.csproj", "{64A0E30A-EF44-4959-927F-EDD23CE7F5CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_DynamicExample", "08_DynamicExample\08_DynamicExample.csproj", "{94DB8712-1A91-41F8-BF4D-14E3A6775B0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -611,6 +613,10 @@ Global
 		{64A0E30A-EF44-4959-927F-EDD23CE7F5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64A0E30A-EF44-4959-927F-EDD23CE7F5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64A0E30A-EF44-4959-927F-EDD23CE7F5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DB8712-1A91-41F8-BF4D-14E3A6775B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DB8712-1A91-41F8-BF4D-14E3A6775B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DB8712-1A91-41F8-BF4D-14E3A6775B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DB8712-1A91-41F8-BF4D-14E3A6775B0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -718,6 +724,7 @@ Global
 		{B59DA212-3EC5-481C-B098-C9A81304F4E3} = {BAE3EFB0-279B-4021-A195-95B69B416EA5}
 		{BA5B878D-A747-49F8-8BDC-022D598E282C} = {BAE3EFB0-279B-4021-A195-95B69B416EA5}
 		{64A0E30A-EF44-4959-927F-EDD23CE7F5CB} = {BAE3EFB0-279B-4021-A195-95B69B416EA5}
+		{94DB8712-1A91-41F8-BF4D-14E3A6775B0C} = {BAE3EFB0-279B-4021-A195-95B69B416EA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033692A7-824F-46DD-8C2C-0676CFB45414}
