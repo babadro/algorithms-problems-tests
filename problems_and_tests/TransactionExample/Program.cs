@@ -68,7 +68,6 @@ namespace TransactionExample
             // Тут некий другой код как будто
 
             Monitor.Exit(t);
-            a = TransactionPrivateLock.m_lock;
         }
         static void Main(string[] args)
         {
